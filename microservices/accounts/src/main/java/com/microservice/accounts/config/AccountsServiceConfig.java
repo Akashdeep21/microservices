@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.eazybytes.accounts.config;
+package com.microservice.accounts.config;
 
 import java.util.List;
 import java.util.Map;

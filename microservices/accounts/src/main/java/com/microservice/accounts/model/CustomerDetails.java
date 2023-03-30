@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.eazybytes.accounts.model;
+package com.microservice.accounts.model;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.eazybytes.accounts.service.client;
+package com.microservice.accounts.service.client;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.eazybytes.accounts.model.Customer;
-import com.eazybytes.accounts.model.Loans;
+import com.microservice.accounts.model.Customer;
+import com.microservice.accounts.model.Loans;
 
 @FeignClient("loans")
 public interface LoansFeignClient {
