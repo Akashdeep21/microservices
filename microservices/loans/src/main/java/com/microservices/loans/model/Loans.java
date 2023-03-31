@@ -1,4 +1,4 @@
-package com.loans.loans.model;
+package com.microservices.loans.model;
 
 import java.sql.Date;
 

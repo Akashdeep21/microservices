@@ -1,5 +1,5 @@
 
-package com.loans.loans.config;
+package com.microservices.loans.config;
 
 import java.util.List;
 import java.util.Map;

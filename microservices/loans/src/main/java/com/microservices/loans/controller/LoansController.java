@@ -1,13 +1,13 @@
 
-package com.loans.loans.controller;
+package com.microservices.loans.controller;
 
 import java.util.List;
 
-import com.loans.loans.config.LoansServiceConfig;
-import com.loans.loans.model.Customer;
-import com.loans.loans.model.Loans;
-import com.loans.loans.model.Properties;
-import com.loans.loans.repository.LoansRepository;
+import com.microservices.loans.config.LoansServiceConfig;
+import com.microservices.loans.model.Customer;
+import com.microservices.loans.model.Loans;
+import com.microservices.loans.model.Properties;
+import com.microservices.loans.repository.LoansRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -27,7 +27,7 @@ public class LoansController {
 	private LoansRepository loansRepository;
 	
 	@Autowired
-	LoansServiceConfig loansConfig;
+    LoansServiceConfig loansConfig;
 
 	@PostMapping("/myLoans")
 	public List<Loans> getLoansDetails(@RequestHeader("eazybank-correlation-id") String correlationid, @RequestBody Customer customer) {

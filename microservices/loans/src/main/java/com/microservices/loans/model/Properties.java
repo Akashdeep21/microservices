@@ -1,4 +1,4 @@
-package com.loans.loans.model;
+package com.microservices.loans.model;
 
 import java.util.List;
 import java.util.Map;

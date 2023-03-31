@@ -1,4 +1,4 @@
-package com.loans.loans;
+package com.microservices.loans;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,13 +10,13 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @RefreshScope
-@ComponentScans({ @ComponentScan("com.eazybytes.loans.controller") })
-@EnableJpaRepositories("com.eazybytes.loans.repository")
-@EntityScan("com.eazybytes.loans.model")
+@ComponentScans({ @ComponentScan("com.microservices.loans.controller") })
+@EnableJpaRepositories("com.microservices.loans.repository")
+@EntityScan("com.microservices.loans.model")
 public class LoansApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(com.loans.loans.LoansApplication.class, args);
+		SpringApplication.run(com.microservices.loans.LoansApplication.class, args);
 	}
 
 }

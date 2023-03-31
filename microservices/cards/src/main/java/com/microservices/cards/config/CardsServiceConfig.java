@@ -1,4 +1,4 @@
-package com.eazybytes.cards.config;
+package com.microservices.cards.config;
 
 import java.util.List;
 import java.util.Map;

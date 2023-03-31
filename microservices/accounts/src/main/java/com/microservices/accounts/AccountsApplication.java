@@ -12,13 +12,13 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @EnableFeignClients
 @RefreshScope
-@ComponentScans({ @ComponentScan("com.eazybytes.accounts.controller")})
-@EnableJpaRepositories("com.eazybytes.accounts.repository")
-@EntityScan("com.eazybytes.accounts.model")
+@ComponentScans({ @ComponentScan("com.microservices.accounts.controller")})
+@EnableJpaRepositories("com.microservices.accounts.repository")
+@EntityScan("com.microservices.accounts.model")
 public class AccountsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(com.eazybytes.accounts.AccountsApplication.class, args);
+		SpringApplication.run(com.microservices.accounts.AccountsApplication.class, args);
 	}
 
 }

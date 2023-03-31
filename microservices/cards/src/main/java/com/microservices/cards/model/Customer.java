@@ -1,4 +1,4 @@
-package com.eazybytes.cards.model;
+package com.microservices.cards.model;
 
 import lombok.Getter;
 import lombok.Setter;

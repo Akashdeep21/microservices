@@ -1,10 +1,10 @@
-package com.eazybytes.cards.controller;
+package com.microservices.cards.controller;
 
-import com.eazybytes.cards.config.CardsServiceConfig;
-import com.eazybytes.cards.model.Cards;
-import com.eazybytes.cards.model.Customer;
-import com.eazybytes.cards.model.Properties;
-import com.eazybytes.cards.repository.CardsRepository;
+import com.microservices.cards.config.CardsServiceConfig;
+import com.microservices.cards.model.Cards;
+import com.microservices.cards.model.Customer;
+import com.microservices.cards.model.Properties;
+import com.microservices.cards.repository.CardsRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
@@ -18,13 +18,13 @@ import java.util.List;
 public class CardsController {
 
 	@Autowired
-	CardsRepository cardsRepository;
+    CardsRepository cardsRepository;
 	
 	@Autowired
 	CardsServiceConfig cardsConfig;
 
 	@PostMapping("/myCards")
-	public List<Cards> getCardDetails(@RequestHeader("eazybank-correlation-id") String correlationid,@RequestBody Customer customer) {
+	public List<Cards> getCardDetails(@RequestHeader("eazybank-correlation-id") String correlationid, @RequestBody Customer customer) {
 		List<Cards> cards = cardsRepository.findByCustomerId(customer.getCustomerId());
 		if (cards != null) {
 			return cards;
