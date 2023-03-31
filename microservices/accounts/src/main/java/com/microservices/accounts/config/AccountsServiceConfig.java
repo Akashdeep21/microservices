@@ -1,4 +1,4 @@
-package com.eazybytes.cards.config;
+package com.microservices.accounts.config;
 
 import java.util.List;
 import java.util.Map;
@@ -10,11 +10,10 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-
 @Configuration
-@ConfigurationProperties(prefix = "cards")
+@ConfigurationProperties(prefix = "accounts")
 @Getter @Setter @ToString
-public class CardsServiceConfig {
+public class AccountsServiceConfig {
 
 	 private String msg;
 	 private String buildVersion;
